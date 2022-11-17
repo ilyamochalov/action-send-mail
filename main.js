@@ -112,7 +112,7 @@ async function main() {
                 rejectUnauthorized: false
             } : undefined,
         })
-
+        console.log(getFrom(from, username))
         const info = await transport.sendMail({
             from: getFrom(from, username),
             to: to,
